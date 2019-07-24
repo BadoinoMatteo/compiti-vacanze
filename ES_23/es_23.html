@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> VIDEO </title>
+        <script src="es_23.js">
+        </script>
+    </head>
+    <body>
+        <h1> 
+            RIPRODUZIONE DI UN VIDEO
+        </h1>
+        <video id="video" controls>
+            <source src="movie.mp4" type= "video/mp4" >
+        </video>
+        <br>
+        <br>
+        <p>
+            <input id="play" type="button" value="play" onclick= "play()" >
+            <input id="stop" type="button" value="stop" onclick= "stop()" >  
+            <label> Volume: </label>
+            <input type="range" min="0.0" max="1.0" step="0.1" value="0.5" oninput="cambiaVolume(event)"> 
+            <input id="10s" type="button" value="10s" onclick="avanzaDieciSecondi()">
+            <input id="30s" type="button" value="30s" onclick="avanzaTrentaSecondi()">
+            <input id="60s" type="button" value="60s" onclick="avanzaMinuto()">
+           
+        </p>
+       
+    </body>
+</html>
